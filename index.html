@@ -9,18 +9,21 @@
 </head>
 
 <body>
-    <!-- Imagen decorativa principal -->
+    <!-- Background decorativo -->
+    <div class="hero-background">
+        <img class="hero__background" src="./images/backgroundColor.svg" alt="">
+        <img class="hero__icon" src="./images//backgroundIcon.svg" alt="">
+    </div>
+
+    <!-- Imagen mujer -->
     <figure class="hero-woman" aria-hidden="true">
-        <img 
-            src="./images/woman.svg" 
-            alt="Woman receiving skin care"
-        >
+        <img src="./images/woman.svg" alt="">
     </figure>
 
-    <!-- Sección de testimonios -->
+    <!-- Testimonios -->
     <aside class="testimonials-section" aria-label="Customer testimonials">
         <blockquote class="testimonial testimonial--one">
-            <img src="./images/quote.svg" alt="Quote mark">
+            <img src="./images/quote.svg" alt="">
             <p>
                 I have a regular schedule to take treatment from GlowQueen, 
                 they gave me the best service and treatment ever to maintain 
@@ -30,7 +33,7 @@
         </blockquote>
 
         <blockquote class="testimonial testimonial--two">
-            <img src="./images/quote.svg" alt="Quote mark">
+            <img src="./images/quote.svg" alt="">
             <p>
                 For the past few years, I've had a hard time finding the right 
                 place for skin care to deal with my complicated skin condition, 
@@ -40,32 +43,14 @@
         </blockquote>
     </aside>
 
-    <!-- Fondo decorativo -->
-    <div class="hero-background">
-        <img 
-            class="hero__background" 
-            src="./images/backgroundColor.svg" 
-            alt="Background shape"
-        >
-        <img 
-            class="hero__icon" 
-            src="./images/backgroundIcon.svg" 
-            alt="Spa icon"
-        >
-    </div>
-
     <!-- Header -->
-    <header class="header container">
+    <header class="header">
+        <nav class="navbar container">
         <a class="header__logo" href="/" aria-label="GlowQueen Home">
-            <img 
-                src="./images/logo.svg" 
-                class="logo" 
-                alt="GlowQueen Logo"
-            >
+            <img src="./images/logo.svg" alt="">
         </a>
 
-        <!-- Navegación principal -->
-        <nav class="nav-links">
+            <div class="nav-links">
             <ul>
                 <li><a href="">Home</a></li>
                 <li><a href="">About</a></li>
@@ -73,19 +58,20 @@
                 <li><a href="">Facilities</a></li>
                 <li>
                     <a class="more" href="">
-                        More <img src="./images/chevron-down.svg" alt="Dropdown">
+                        More 
+                        <img src="./images/chevron-down.svg" alt="">
                     </a>
                 </li>
             </ul>
-        </nav>
+            </div>
 
         <nav class="nav-actions">
             <div class="nav-icons">
                 <a href="">
-                    <img src="./images/search.svg" alt="Search">
+                    <img src="./images/search.svg" alt="">
                 </a>
                 <a href="">
-                    <img src="./images/shoppingBag.svg" alt="Shopping">
+                    <img src="./images/shoppingBag.svg" alt="">
                 </a>
             </div>
 
@@ -94,11 +80,13 @@
                 <button class="btn-signup">Sign Up</button>
             </div>
         </nav>
+        </nav>
     </header>
     
     <!-- Contenido principal -->
-    <main>
-        <section class="hero container">
+    <main class="main">
+        <section class="hero section">
+            <div class="container">
             <h1 class="hero__title">
                 Bring back the beauty and glow of your skin
             </h1>
@@ -108,41 +96,36 @@
                 and affordable price
             </p>
 
-            <!-- Acciones principales -->
             <div class="hero__actions">
                 <button class="hero__btn book">Book Now</button>
                 <button class="hero__btn watch">
-                    <img src="./images/iconPlay.svg" alt="Play">
+                    <div class="hero__container">
+                    <img src="./images/iconPlay.svg" alt="">
+                    </div>
                     Watch Video
                 </button>
             </div>
 
-            <!-- Estadísticas destacadas -->
             <ul class="hero__list">
                 <li class="hero__item">
-                    <div class="hero__icon-container">
-                        <img src="./images/icon1.svg" alt="Treatment icon">
-                    </div>
+                    <img src="./images/icon1.svg" alt="">
                     <h3>15+</h3>
                     <p>Special Treatment</p>
                 </li>
 
                 <li class="hero__item">
-                    <div class="hero__icon-container">
-                        <img src="./images/icon2.svg" alt="Therapist icon">
-                    </div>
+                    <img src="./images/icon2.svg" alt="">
                     <h3>25+</h3>
                     <p>Professional Therapist</p>
                 </li>
 
                 <li class="hero__item">
-                    <div class="hero__icon-container">
-                        <img src="./images/icon3.svg" alt="Herbal icon">
-                    </div>
+                    <img src="./images/icon3.svg" alt="">
                     <h3>100%</h3>
                     <p>Herbal Cream Formula</p>
                 </li>
             </ul>
+            </div>
         </section>
     </main>
 </body>
